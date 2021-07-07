@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBaseN1-Gulyaev</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let Tc = +prompt("введите температуру в градусах цельсия")
+        let Tf = (9 / 5) * Tc + 32
+        let text = ("В градусах по фаренгейту температура равна: ")
+        let final = text + Tf;
+
+        if (Tf >= 120) {
+            alert(final + "! Лучше сидите дома под кондиционером, на улице можно перегреться");
+        } else if (Tf >= 75) {
+            alert(final + ". Прекрасная погода для прогулок и выезда за город :)")
+        } else if (Tf >= 50) {
+            alert(final + ". Взьмите с собой на прогулку лёгкую куртку!")
+        } else if (Tf >= 25) {
+            alert(final + ". Не забудьте взять с собой шапку! сегодня погода с сюрпризом:)")
+        } else if (Tf >= 14) {
+            alert(final + ". Оденьтесь потеплее, сегодня погода может подарить вам простуду")
+        } else if (Tf >= -18) {
+            alert(final + ". На улице очень холодно, одевайтесь теплее!")
+        } else if (Tf >= -40) {
+            alert(final + ". Будьте осторожны! в такую погоду даже школы не работают!")
+        } else if (Tf < -40) {
+            alert(final + "! Как вы тут живёте? может, переедете в край потеплее? :)")
+        } else if (Tf = "NaN") {
+            alert(" Необходимо было ввести градусы цельсия ЦИФРАМИ. Обновите страницу и повторите ввод. У вас всё получится :)")
+        } else {
+            alert(final);
+        };
+    </script>
+
+</body>
+
+</html>
