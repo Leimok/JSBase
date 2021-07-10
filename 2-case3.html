@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let a = +prompt("введите первое число")
+        let b = +prompt("введите второе число")
+        let sum = null;
+        if (a >= 0 && b >= 0) {
+            sum = a - b;
+            alert("оба числа положительные, их разность равна: " + sum)
+        } else if (a < 0 && b < 0) {
+            sum = a * b;
+            alert("оба числа отрицательны, их произведение равно: " + sum)
+        } else if (a * b < 0) {
+            sum = a + b;
+            alert("числа разных знаков, их сумма равна: " + sum)
+        } else {
+            alert(" Необходимо было ввести ЦИФРЫ, допустимо использование '+' и '-' перед числом. Обновите страницу и повторите ввод. У вас всё получится :)")
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let arg1 = +prompt("Введите первое число")
+        let arg2 = +prompt("Введите второе число")
+        let operation = prompt("введите знак операции (+, -, *, /.")
+        function sum(a, b) {
+            return a + b;
+        }
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+        function division(a, b) {
+            return a / b;
+        }
+
+        function MathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    return "Значение суммы равно " + sum(arg1, arg2);
+                case "-":
+                    return "Значение разности равно " + subtraction(arg1, arg2);
+                case "*":
+                    return "Значение умножения равно " + multiplication(arg1, arg2);
+                case "/":
+                    return "Значение деления равно " + division(arg1, arg2);
+                default:
+                    return "Необходимо ввести значения цифрами и знак действия (+, -, *, /.)"
+            }
+        };
+        alert(MathOperation(arg1, arg2, operation))
+
+    </script>
+</body>
+
+</html>
